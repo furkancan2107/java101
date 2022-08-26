@@ -8,18 +8,22 @@ public class App {
             tutar = scan.nextDouble();
         }
 
-        kdvoran = 0.18;
+        if (tutar == 0 && tutar <= 1000) {
+         kdvoran = 0.18;
         kdvtutar = tutar * kdvoran;
         sonfiyat = tutar + kdvtutar;
-        if (tutar == 0 && tutar <= 1000) {
-            kdvoran = 0.18;
+          System.out.println("kdv tutariniz: " + kdvtutar);
+        System.out.println("yeni fiyat: " + sonfiyat);
 
         }
         if (tutar > 1000) {
-            kdvoran = 0.08;
-        }
-        System.out.println("kdv tutariniz: " + kdvtutar);
+         kdvoran = 0.08
+        kdvtutar = tutar * kdvoran;
+        sonfiyat = tutar + kdvtutar;
+            System.out.println("kdv tutariniz: " + kdvtutar);
         System.out.println("yeni fiyat: " + sonfiyat);
+        }
+        
 
     }
 }
