@@ -53,33 +53,37 @@ public class App {
             System.out.println("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
             int tip = scan.nextInt();
 
-            if (tip != 1 && tip != 2) {
-                System.out.println("Lütfen 1 yada 2 girin");
-            }
-            double sonFiyat;
-            double normalFiyat = mesafe * 0.10;
-            if (yas < 12) {
-                sonFiyat = normalFiyat / 2;
-                if (tip == 2) {
-                    sonFiyat = (normalFiyat * 0.8) * 2;
+            while (true) {
+                if (tip != 1 && tip != 2) {
+                    System.out.println("Lütfen 1 yada 2 girin");
+                    break;
                 }
-                System.out.println("toplam borcunuz: " + sonFiyat);
-            }
-            if (yas >= 12 && yas < 24) {
-                sonFiyat = normalFiyat * 0.9;
-                if (tip == 2) {
-                    sonFiyat = (normalFiyat * 0.8) * 2;
+                double sonFiyat;
+                double normalFiyat = mesafe * 0.10;
+                if (yas < 12) {
+                    sonFiyat = normalFiyat / 2;
+                    if (tip == 2) {
+                        sonFiyat = (normalFiyat * 0.8) * 2;
+                    }
+                    System.out.println("toplam borcunuz: " + sonFiyat);
                 }
-                System.out.println("toplam borcunuz: " + sonFiyat);
-            }
-            if (yas > 65) {
-                sonFiyat = normalFiyat * 0.7;
-                if (tip == 2) {
-                    sonFiyat = (normalFiyat * 0.8) * 2;
+                if (yas >= 12 && yas < 24) {
+                    sonFiyat = normalFiyat * 0.9;
+                    if (tip == 2) {
+                        sonFiyat = (normalFiyat * 0.8) * 2;
+                    }
+                    System.out.println("toplam borcunuz: " + sonFiyat);
                 }
-                System.out.println("toplam borcunuz: " + sonFiyat);
-            } else {
-                System.out.println("toplam borcunuz: " + normalFiyat);
+                if (yas > 65) {
+                    sonFiyat = normalFiyat * 0.7;
+                    if (tip == 2) {
+                        sonFiyat = (normalFiyat * 0.8) * 2;
+                    }
+                    System.out.println("toplam borcunuz: " + sonFiyat);
+                } else {
+                    System.out.println("toplam borcunuz: " + normalFiyat);
+                }
+                break;
             }
         }
 
