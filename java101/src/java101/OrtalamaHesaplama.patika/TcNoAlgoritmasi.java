@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         String tcNo = "21574521838";
         int[] sayi = new int[11];
-        // tc yi parcalıyoruz
+        // tc yi rakamlarına ayır
         for (int i = 0; i < 11; i++) {
             sayi[i] = Integer.parseInt(tcNo.substring(i, (i + 1)));
         }
