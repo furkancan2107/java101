@@ -3,10 +3,9 @@ public class App {
 
     /*
      * ilk on rakamın toplamının birler basmağı 11. rakamı veriyor.
-     * 1,3,5,7 ve 9. rakamın toplamının 7 katı ile 2,4,6 ve 8. rakamın toplamının 9
-     * katının toplamının birler basamağı 10. rakamı veriyor.
-     * 1,3,5,7 ve 9. rakamın toplamının 8 katının birler basamağı 11. rakamı
-     * veriyor.
+     * 1,3,5,7 ve 9. rakamın toplamının 7 katı ile 2,4,6 ve 8. rakamın toplamının 
+     *  farkının birler basamağı 10. rakamı veriyor.
+     *  ilk hane 0 olamaz
      */
     public static void main(String[] args) {
         String tcNo = "21574521838";
